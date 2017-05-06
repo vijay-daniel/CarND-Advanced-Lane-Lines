@@ -127,4 +127,8 @@ Here's a [link to my video result](./project_video_op.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+I tried various colour spaces and finally settled on one which worked best for the given images. However, in real life, I understand that this method of thresholding alone may not be sufficient. It may be worthwhile to try out differnt combinations of binary thresholding and have a measure of how much "information" that thresholding method provides and select the best one. When I tried my pipeline on the challenge video, I observed that it was relatively more sensitive to variations in texture of the road.
+
+Also, the pipeline assumes that when we start off, we have a good road and that there are relatively small patches of roads where our detection may not work properly. This is not necessarily true as was evident in the failure of my pipeline against the challenge video.
+
+One way is to make this more robust is to have a measure of confidence for every set of lines detected. Even if one line (either the left or the right) is detected with high confidence, we could use the parallelism between the two lines to detect the other.
