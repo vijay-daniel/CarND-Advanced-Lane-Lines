@@ -51,7 +51,7 @@ You're reading it!
 
 #### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
-The code for this step is contained in the first code cell of the IPython notebook located in "./examples/example.ipynb". 
+The code for this step is contained in the first code cell of the IPython notebook located in ["./examples/example.ipynb"](./examples/example.ipynb). 
 
 The location of the chessboard corners in the real world for each image is represented in the objpoints variable. The corresponding points in the image are represented using the imgpoints variable. I do the following for each image:
 * Convert each image to grayscale
