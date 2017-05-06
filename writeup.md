@@ -82,10 +82,10 @@ The code for my perpective transform is present in a function called `perspectiv
 
 | Source        | Destination   | 
 |:-------------:|:-------------:| 
-| 585, 460      | 320, 0        | 
-| 203, 720      | 320, 720      |
-| 1127, 720     | 960, 720      |
-| 695, 460      | 960, 0        |
+| 589, 450      | 210, 0        | 
+| 200, 700      | 210, 700      |
+| 1175, 700     | 1070, 700      |
+| 693, 450      | 1070, 0        |
 
 The warped image looks like this:
 
